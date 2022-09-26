@@ -1,3 +1,4 @@
+<!-- Pour générer automatiquement le code de début pour une page html faire ! + Tab-->
 <!-- balise permetant de signaler au navigateur que c'est un document HTML-->
 <!DOCTYPE html>
 <!--Langue + ouverture de notre document-->
@@ -6,17 +7,71 @@
 <head>
     <!--balise meta -  char set pour caractère francais-->
     <meta charset="UTF-8">
-    <!---->
+    <!--pour la compatibilité du navigateur-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- taille du document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ma première page HTML">
+    <!--On va faire le lien avec le fichier CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
     <!--C'est le titre qui apparé dans l'onglet du navigateur--> 
     <title>Les balises HTML</title>
 </head>
-<!--c'est le corp du document, la parite affichée dans le navigateur-->
+<!--c'est le corp du document, la partie affichée dans le navigateur-->
 <body>
-    <!-- Je peux écrire ce que je veux-->
-    Hello world 6
+    <!-- Les types de balises-->
+    <!-- Les balises en paires, par exemple <h1> qui correspond au titre principal de notre page -->
+    <h1>Stéphane GUEGUEN - Développeur web</h1>
+    <!-- Les balises orphelines, comme la balise <img> -->
+    <img src="assets/img/Moi.jpg" alt="Photo du profil de Steph"/>
+
+    <!-- Atttention par convention on peut fermer une balise orpheline soit on écrit <img> ce qui est correcte soit on utilise <img/> pour optimiser -->
+   
+    <!-- les attributs sont les "parametres" de nos balises, ils viennent les compléter pour donner de nouvelles informations - éviter les balises de styles qui sont plutot dans le fichier CSS-->
+    <balise attribut="valeur"/>
+
+    <!-- ORGANISATION DU TEXTE  -->
+    <!-- On organise le texte avec les headings-->
+    <!--Dans notre cas, nous avons un h1, donc un titre principal - Nous voulons -->
+    <h2>Coordonées</h2> 
+    <!-- on se sert d'un paragraphe pour donner une indication-->
+    <p>Je suis disponible de suite, contactez moi !</p>
+    <!--J'utilise la balise adress car je vais rentrer mes coordonnées-->
+    <address>
+        <!-- on utilise la balise anchor <a></a> pour définir nos liens -->
+        <!-- Dans ce cas précis on va donner un lien vers notre courriel-->
+        <a href="mailto:sgueguen38@gmail.com">sgueguen38@gmail.com</a>
+        <!-- pour effectuer un saut de ligne j'utilise <br> -->
+        <br>
+        <!--idem pour le téléphone-->
+        <a href="tel:+33781711065">+33(0)7-81-71-10-65</a>
+    </address>
+    <h2>Expérience professionnelles</h2>
+    
+    <!-- On va utiliser la liste non-ordonnées -->
+    <ul>
+        <!-- on y insère des puces-->
+        <li>
+            <!-- On place un titre-->
+            <!-- <span> est un conteneur générique en ligne (inline) pour les contenus phrasés.-->
+            <h3>Formateur chez <span class="red">webforce 3 </span></h3>
+            <!--et un paragraphe avec <p> -->
+            <p>
+                <!-- pour mettre en valeur exemple <i> pour italique <b> pour bold (strong fait pareil mais reconu pour sio comme plus important) <u> pour sousligné-->
+                <i>Depuis 2020</i>, j'interviens <b>aussi bien</b> en centre 
+               qu'en maison d'arret, auprés de réfugiés ainsi 
+               que de personnes en situation de <u>handicap</u></p>
+        </li>
+        <!--Lorem + nombre permet de générer du texte avec x caractère - Pour le voir mieux on peux fair Alt + Z -->
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dignissimos quasi, sunt quam sapiente praesentium aspernatur ipsa nihil illum incidunt repellat. Pariatur laboriosam veniam eius sint error officia? Animi consequatur ipsum similique nulla facilis cumque et harum, ad, adipisci, vero quae nam atque eius? Ex ut nostrum enim debitis, hic rerum illum asperiores perspiciatis nesciunt porro dolorum cumque quas fugit numquam reiciendis nisi ipsum facere architecto eligendi. Totam, laboriosam obcaecati neque voluptates nostrum a, distinctio voluptas expedita quis ea quaerat ipsum esse eos sed enim perspiciatis optio necessitatibus tempore culpa, sequi autem fuga. Adipisci aperiam possimus exercitationem consectetur non, doloribus numquam qui? Sint non ex alias quidem commodi autem voluptatem, quod repellendus voluptatum. Eveniet, modi? Quae, voluptatem itaque excepturi ducimus dolore fugit quas sapiente sunt inventore labore, amet aut, sint voluptatum eos. Maiores inventore veritatis maxime id reiciendis delectus sed dolores ducimus necessitatibus consectetur officiis, doloremque sunt accusantium natus, nulla accusamus deleniti rerum amet velit soluta. Incidunt dignissimos rem suscipit adipisci atque necessitatibus aspernatur eligendi inventore reiciendis, magni natus dolores esse, placeat tempora totam vel. Inventore optio dolorem quidem dignissimos, illo veniam iusto dolorum ad eos architecto aperiam sit et exercitationem laborum amet aut praesentium! Perferendis commodi laudantium quia ad?</li>
+        <li>Deux</li>
+        <li>Trois</li>
+        
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores magni cumque maxime cupiditate modi iste sit, fuga libero repellendus quasi eius delectus natus recusandae deleniti, sint nesciunt nulla illo veritatis impedit blanditiis provident tempore repudiandae hic. Itaque, velit voluptas.</li>
+    </ul>
+
+
+
+
 </body>
 </html>
