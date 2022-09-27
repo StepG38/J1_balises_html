@@ -1,5 +1,35 @@
 /* Mes styles */
 
+/* on va rendre le scroll plus fluide */
+html {
+    scroll-behavior: smooth;
+}
+
+/* class couleur rouge pour raccourci dans HTML */
 .red{
     color: red;
 }
+    
+/* fonction pour centrer le texte */
+.text-center{
+    text-align: center;
+}
+
+ /* la couleur de tous les liens : a = les liens */
+a {
+    text-decoration: none;
+    color: brown;
+}
+ 
+/* Je decide de la couleur des liens visités */
+ a:visited {
+    color: green;
+ }
+
+ /* je choisi la couleur du lien lors du survol (hover) de la souris */
+ a:hover {
+    background: orange;
+    color : black;
+    text-decoration: underline;
+
+ }
