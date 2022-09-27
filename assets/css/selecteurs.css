@@ -1,0 +1,34 @@
+/* Mes styles */
+
+/* on va rendre le scroll plus fluide */
+
+p {
+    color:red;
+}
+
+/* Pour une class il faut mettre un . devant le nom */
+.blue{
+    color: blue;
+}
+
+/* Pour un id on ajoute un # devant le nom */
+#baseline {
+    border: 2px solid black;
+    font-size: 40px;
+}
+
+h2, span {
+    background: orange;
+    font-weight: bold;
+}
+
+/* pour sélectionner universelement on utilise *     */
+* {
+    font-size: 20px;
+}
+
+
+/* On selectionne les strong uniquement dans les paragraphes */
+p strong {
+    color:black
+}

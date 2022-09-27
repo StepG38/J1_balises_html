@@ -5,6 +5,13 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    color: rgb(8, 8, 8);
+    background-color: rgb(165, 165, 236);
+}
+
+
+
 /* class couleur rouge pour raccourci dans HTML */
 .red{
     color: red;
@@ -15,12 +22,25 @@ html {
     text-align: center;
 }
 
+/* Je décide que TOUS mes liens ne soient pas surlignés */
+a {
+    text-decoration: none;
+    /* la couleur de tous les liens */
+    color:#6c316e;
+}
+
  /* la couleur de tous les liens : a = les liens */
 a {
     text-decoration: none;
     color: brown;
 }
  
+
+h1:hover {
+    color:black;
+}
+
+
 /* Je decide de la couleur des liens visités */
  a:visited {
     color: green;
