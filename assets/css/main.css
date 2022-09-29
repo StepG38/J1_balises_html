@@ -73,3 +73,19 @@ h1:hover {
         padding: 10px;
 
     }
+
+
+.maphoto{
+    /* largeur */
+    width: 200px;
+    /* hauteur */
+    height: 200px;
+    /* bordurer */
+    border: 1px solid black;
+    /* marges exterieur */
+    margin: 20px;
+    /* on ajoute des bordures */
+    border-radius: 50%;
+    /* on ajoute une ombre */
+    box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }

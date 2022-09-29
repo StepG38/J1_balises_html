@@ -1,0 +1,134 @@
+.btn {
+background:red;
+color: black;
+font-size: 3vw;
+cursor: pointer;
+padding: 1em;
+width: 500px;
+margin:50px auto;
+border-radius: 20px;
+/* on applique une transformation (facultative quand elle est à 1) */
+transform: scale(0.5);
+/* on ajoute*/
+transition: 1s; /* ou bien 1000ms*/
+}
+
+.container{
+    background: cadetblue;
+    padding: 20px 0;
+}
+
+.btn:hover {
+/* on augmente la valeur */
+transform: scale(1.25);
+}
+
+form{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+}
+
+form input {
+    border: 2px solid white;
+    border-radius: 100em;
+    color:darkblue;
+    font-size: 2em;
+    outline: none;
+    padding: 2em;
+    width: 100%;
+    
+}
+
+/* on va selectionner la pseudo class focus lorsque notre input est selectionné- focus = quand on clic sur l'objet*/
+form input:focus {
+border:5px dotted green
+
+}
+
+/* on va selectionner la pseudo class invalid afin de vérifier l'état des données saisies*/
+/* pour affiner nous allons utiliser la pseudo classe not() combiné à focus
+:not() passera à true lorsque son selecteur est à false
+:not() est true quand l'input quand l'input n'EST PLUS :focus
+ici si input n'est pas en :focus ET si :invalid est true, la couleur rouge apparait
+quand notre utilisateur a terminé de rentrer son courreil*/
+
+
+form input:not(:focus):invalid {
+    border: 2px solid red;
+    background: red;
+    color:white;
+}
+
+.balle {
+    width: 200px;
+    height: 200px;
+    background:blueviolet;
+    border-radius: 50%;
+    margin: auto;
+
+}
+
+.btn2 {
+    background:red;
+    color: black;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 1em;
+    width: 500px;
+    margin:50px auto;
+    border-radius: 20px;
+    /* on applique une transformation (facultative quand elle est à 1) */
+    transform: scale(0.5);
+    /* on ajoute*/
+    transition: 1s; /* ou bien 1000ms*/
+    }
+
+    /* hover + = en passant sur le bouton 2 on transforme l'élément d'aprés donc la balle*/
+    .btn2:hover + .balle {
+        transform: scale(1.25);
+        transition: 400ms;
+        background: chartreuse;
+    }
+
+    .btn3 {
+        background:red;
+        color: black;
+        font-size: 3vw;
+        cursor: pointer;
+        padding: 1em;
+        width: 500px;
+        margin:50px auto;
+        border-radius: 20px;
+      
+    }
+    .progres {
+        width: 500px;
+        height: 30px;
+        border: 1px solid black;
+        margin: auto;
+        padding: 2px;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .barre-progres {
+        background: chartreuse;
+        height: 30px;
+        /* scalex(0) fait disparaitre notre barre */
+        transform: scaleX(0);
+        /* transform-origin fonctionne avec 2 parametres x et y (x pour gauche et y pour top) */
+        transform-origin: 0 50%;
+        /* voir site cubic-bezier pour générer les valeur pour les accélération*/ 
+        transition: 3000ms cubic-bezier(1,0,0,.97);
+
+    }
+
+    .btn3:active + .progres > .barre-progres {
+        transform: scaleX(1);
+    
+
+    }
