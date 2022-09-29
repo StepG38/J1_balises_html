@@ -1,0 +1,81 @@
+section div{
+/* largeur */
+width: 200px;
+/* hauteur */
+height: 200px;
+/* bordurer */
+border: 1px solid black;
+/* marges exterieur */
+margin: 20px;
+/* on ajoute des bordures */
+border-radius: 50%;
+/* on ajoute une ombre */
+box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;;
+}
+
+
+/* je selectionne la premiere div */
+div:first-of-type {
+    /* couleur de fond */
+    background: violet;
+}
+
+/* je selectionne la seconde div */
+div:nth-child(2) {
+    /* couleur de fond */
+    background: green;
+    }
+
+/* je selectionne la derniere div */
+div:last-of-type {
+    /* couleur de fond */
+    background:red;
+}
+
+
+
+/* je crée des helpers  */
+
+.flex {
+    display: flex;
+}
+
+/* déplacement sur l'axe principale absicces (X) avec justify-content */
+.flex-start {
+    justify-content : flex-start;
+}
+
+.flex-end {
+    justify-content : flex-end;
+}
+
+.center {
+    justify-content : center;
+}
+
+.space-between {
+    justify-content : space-between;
+}
+
+.flex-around {
+    justify-content : space-around;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.separation {
+    height:50px;
+    background-color: black;
+
+}
+
+/* déplacement sur l'axe secondaire ordonnée (Y) avec align-items */
+
+.container {
+/* on passe une marge interieur */
+    padding: 5px;
+    background: yellow;
+    height: 600px;
+}

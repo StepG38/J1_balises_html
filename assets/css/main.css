@@ -53,3 +53,13 @@ h1:hover {
     text-decoration: underline;
 
  }
+
+/* je crée des helpers  */
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
