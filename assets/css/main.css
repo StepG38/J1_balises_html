@@ -43,7 +43,7 @@ h1:hover {
 
 /* Je decide de la couleur des liens visités */
  a:visited {
-    color: green;
+    color: rgb(6, 0, 128);
  }
 
  /* je choisi la couleur du lien lors du survol (hover) de la souris */
@@ -63,3 +63,13 @@ h1:hover {
 .column {
     flex-direction: column;
 }
+
+.center {
+    justify-content : center;
+}
+
+.pad10 {
+    /* on passe une marge interieur */
+        padding: 10px;
+
+    }
