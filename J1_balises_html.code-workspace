@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CVsg"
+		},
+		{
+			"path": "../Eval_HTML_CSS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Eval_HTML_CSS"
+	}
+}
