@@ -1,36 +1,35 @@
+.direction {
+    display: flex;
+}
+
 .direction div {
     width: 200px;
     height: 100px;
     background: blue;
     margin: 2em;
-
 }
 
 .direction>div:last-child {
     background: red;
 }
 
-.direction {
-    display: flex;
-}
 
 /* RESPONSIVE DESIGN */
 
+/* si écran plus petit que 768px on passe en colonne */
 @media screen and (max-width: 768px) {
-
     .direction {
         flex-direction: column;
     }
 }
 
+/* si écran entre 768 et 996px on inverse la colonne */
 @media screen and (min-width:768px) and (max-width:996px) {
-
     .direction {
         flex-direction: column-reverse;
     }
-
     .direction > div:first-child {
         background: yellow;
     }
-
 }
+

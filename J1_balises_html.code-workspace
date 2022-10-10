@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../Eval_HTML_CSS"
+		},
+		{
+			"path": "../Bootstrap"
 		}
 	],
 	"settings": {
